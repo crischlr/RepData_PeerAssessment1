@@ -9,7 +9,7 @@ a device such as a [Fitbit](http://www.fitbit.com/), [Nike Fuelband](http://www.
 
 These data have been collected during the months of October and November 2012 from an anonymous individual.  
 
-The variables included in this dataset are:  
+The variables included in this dataset:  
 
 * steps: Number of steps taking in a 5-minute interval (missing values are coded as NA).  
 * date: The date on which the measurement was taken in YYYY-MM-DD format.  
