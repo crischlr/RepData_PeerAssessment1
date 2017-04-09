@@ -38,7 +38,6 @@ if (file.exists("activity.zip")) {
   
   
   
-***
 ### What is mean total number of steps taken per day?
 ***
   
@@ -53,7 +52,7 @@ steps_day <- aggregate(activity$steps, list(activity$date), sum)
 
 **2.- Make a histogram of the total number of steps taken each day.**  
 
-````{r plot total steps taken per day, warning=FALSE, message=FALSE}
+````{r plot-total-steps-taken-per-day, warning=FALSE, message=FALSE}
 library(ggplot2)
 
 names(steps_day) <- c("date", "steps")
@@ -81,7 +80,7 @@ sprintf("Median: %f", steps_median)
   
 **1.- Make a time series plot (i.e. type = "l") of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all days (y-axis).**  
 
-```{r plot time series}
+```{r plot-time-series}
 
 steps_day_mean <- aggregate(activity$steps, list(activity$interval), mean, na.rm=TRUE)
 names(steps_day_mean) <- c("interval", "steps")
@@ -160,7 +159,7 @@ activity2[nas_steps,"steps"] <- activity2[nas_steps,"mean_day"]
   
 **4.- Make a histogram of the total number of steps taken each day.**  
 
-```{r plot histogram for dataset without NAs activity2, warning=FALSE, message=FALSE}
+```{r plot-histogram-for-dataset-activity2, warning=FALSE, message=FALSE}
 steps_day_noNAs <- aggregate(activity2$steps, list(activity$date), sum)
 names(steps_day_noNAs) <- c("date", "steps")
 qplot(steps, data=steps_day_noNAs, geom="histogram", 
@@ -195,7 +194,7 @@ The impacts are minimum.
 
 ### Are there differences in activity patterns between weekdays and weekends?
   
-```{r difference between weekdays and weekends, warning=FALSE, message=FALSE}
+```{r plot-weekdays-weekends, warning=FALSE, message=FALSE}
 library(lubridate)
 
 activity2_day_mean <- aggregate(steps ~ interval + date, data=activity2, mean)
