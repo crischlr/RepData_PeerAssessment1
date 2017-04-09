@@ -58,7 +58,7 @@ qplot(steps, data=steps_day, geom="histogram",
       main="Total number of steps taken each day")
 ```
 
-![](PA1_template_files/figure-html/plot total steps taken per day-1.png)<!-- -->
+![](PA1_template_files/figure-html/plot total steps taken per day-1.png?raw=true)<!-- -->
 
 
 **3.- Calculate and report the mean and median of the total number of steps taken per day.**  
@@ -104,7 +104,7 @@ ggplot(steps_mean_ok, aes(interval,steps)) +
               plot.title = element_text(hjust=0.5))
 ```
 
-![](PA1_template_files/figure-html/plot time series-1.png)<!-- -->
+![](PA1_template_files/figure-html/plot time series-1.png?raw=true)<!-- -->
 
 
 **2.- Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?**  
@@ -189,7 +189,7 @@ qplot(steps, data=steps_day_noNAs, geom="histogram",
       main="Total number of steps taken each day")
 ```
 
-![](PA1_template_files/figure-html/plot histogram for dataset without NAs activity2-1.png)<!-- -->
+![](PA1_template_files/figure-html/plot histogram for dataset without NAs activity2-1.png?raw=true)<!-- -->
 
   
 **5.-  Calculate and report the mean and median total number of steps taken per day.**  
@@ -248,4 +248,4 @@ ggplot(activity2_day_mean, aes(interval,steps)) +
               plot.title = element_text(hjust = 0.5))
 ```
 
-![](PA1_template_files/figure-html/difference between weekdays and weekends-1.png)<!-- -->
+![](PA1_template_files/figure-html/difference between weekdays and weekends-1.png?raw=true)<!-- -->
